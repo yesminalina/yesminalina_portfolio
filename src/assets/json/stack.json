@@ -1,0 +1,8 @@
+{
+  "stack": {
+    "frontend": ["Html", "CSS", "Bootstrap", "TailwindCSS", "Javascript", "ReactJS", "Vite"],
+    "backend": ["Node.js", "Express.js", "Flask", "PostgreSQL", "MySQL", "Swagger"],
+    "tools": ["Git", "GitHub", "VSCode", "Postman"],
+    "data-analysis": ["Python", "Numpy", "Pandas", "Matplotlib", "Seaborn", "Scikit-Learn"]
+  }
+}
