@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <main>
+    <main className='bg-yellow_pale'>
       <Navigation />
       <BrowserRouter>
         <Routes>
