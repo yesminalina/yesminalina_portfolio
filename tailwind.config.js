@@ -16,9 +16,8 @@ export default {
       }
     },
     colors: {
-      blue: '#FAF1E4',
+      yellow_pale: '#FAF1E4',
       pink: '#EA8DB2',
-      peach: '#FFA3FD',
       mint: '#CEDEBD',
       olive_pale: '#9EB384',
       olive: '#435334',
