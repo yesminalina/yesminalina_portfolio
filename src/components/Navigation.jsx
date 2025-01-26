@@ -2,7 +2,7 @@ import { Link } from 'react-scroll'
 
 const Navigation = () => {
   return (
-    <nav className='flex justify-between align-middle text-olive font-semibold py-10 px-36 w-full top-0 left-0 fixed backdrop-blur-sm h-16'>
+    <nav className='flex justify-between align-middle text-olive font-semibold py-10 px-36 w-full top-0 left-0 z-50 fixed backdrop-blur-sm h-16'>
       <div className='flex self-center'>
         <img className='w-48' src='logo-nav.png' />
       </div>
