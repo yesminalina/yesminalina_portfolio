@@ -66,29 +66,29 @@ const Stack = () => {
   }
 
   return (
-    <Element name='stack' className='py-8 bg-mint'>
-      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto'>
-        <h2 className='self-center text-3xl text-olive uppercase font-semibold mb-8'>My Stack <span className='text-pink text-4xl'>.</span></h2>
+    <Element name='stack' className='py-28 bg-yellow_pale min-h-svh'>
+      <div className='flex flex-col justify-around align-middle md:max-w-[1100px] mx-auto'>
+        <h2 className='self-center text-4xl text-olive uppercase font-bold mb-16'>My Stack <span className='text-pink text-4xl'>.</span></h2>
         <div className='flex justify-around'>
-          <article className='flex flex-col w-1/4 me-4'>
+          <article className='flex flex-col w-1/4 me-4 p-4 rounded-lg shadow-xl hover:shadow-inner bg-gradient-to-br from-mint'>
             <h3 className='uppercase text-slate-500 font-semibold self-center mb-4'>Frontend</h3>
             <div className='flex flex-wrap justify-center'>
               {renderStack(frontend)}
             </div>
           </article>
-          <article className='flex flex-col w-1/4 me-4'>
+          <article className='flex flex-col w-1/4 me-4 p-4 rounded-lg shadow-xl hover:shadow-inner bg-gradient-to-br from-mint'>
             <h3 className='uppercase text-slate-500 font-semibold self-center mb-4'>Backend</h3>
             <div className='flex flex-wrap justify-center'>
               {renderStack(backend)}
             </div>
           </article>
-          <article className='flex flex-col w-1/4 me-4'>
+          <article className='flex flex-col w-1/4 me-4 p-4 rounded-lg shadow-xl hover:shadow-inner bg-gradient-to-br from-mint'>
             <h3 className='uppercase text-slate-500 font-semibold self-center mb-4'>Tools</h3>
             <div className='flex flex-wrap justify-center'>
               {renderStack(tools)}
             </div>
           </article>
-          <article className='flex flex-col w-1/4 me-4'>
+          <article className='flex flex-col w-1/4 me-4 p-4 rounded-lg shadow-xl hover:shadow-inner bg-gradient-to-br from-mint'>
             <h3 className='uppercase text-slate-500 font-semibold self-center mb-4'>Data Analysis</h3>
             <div className='flex flex-wrap justify-center'>
               {renderStack(dataAnalysis)}

@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <section className='mx-auto min-h-svh font-poppins'>
       <Header />
-      <Stack />
       <ProjectsHome />
+      <Stack />
     </section>
   )
 }

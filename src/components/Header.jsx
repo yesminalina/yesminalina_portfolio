@@ -1,3 +1,4 @@
+import { Element } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
@@ -6,11 +7,11 @@ const Header = () => {
   const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} size='2x' className='me-3' />
   const githubIcon = <FontAwesomeIcon icon={faGithub} size='2x' className='me-3' />
   return (
-    <header name='about' className='md:flex md:justify-center md:align-bottom md:max-w-[1100px] mx-auto pt-28 text-olive'>
-      <div className='md:flex md:self-center h-[540px] bg-hero-img bg-contain bg-center bg-no-repeat'>
+    <Element name='about' className='md:flex md:justify-center md:align-bottom md:max-w-[1100px] min-h-svh mx-auto pt-28 text-olive'>
+      <div className='md:flex md:self-end h-[540px] bg-hero-img bg-contain bg-center bg-no-repeat'>
         <div className='flex flex-col md:w-8/12'>
           <p className='text-xl text-pink'>Hey there, my name is</p>
-          <h1 className='text-start font-semibold text-8xl max-w-36'>Yesmin Pizarro<span className='text-olive_pale'>.</span></h1>
+          <h1 className='text-start font-semibold text-8xl max-w-36'>Yesmin Pizarro<span className='text-pink'>.</span></h1>
         </div>
         <div className='self-end md:w-4/12 md:mt-8 mb-8 ps-16'>
           <h2 className='text-3xl uppercase font-semibold'>JS Fullstack Developer</h2>
@@ -22,7 +23,7 @@ const Header = () => {
           </article>
         </div>
       </div>
-    </header>
+    </Element>
   )
 }
 

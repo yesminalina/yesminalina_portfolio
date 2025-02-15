@@ -1,0 +1,45 @@
+{
+  "projects": [
+    {
+      "title": "Geekhub Marketplace",
+      "img": "geekhub-home.png",
+      "description": "A Fullstack App for a Marketplace with shopping cart, built with React.js for a responsive front-end and Node.js, Express.js, and PostgreSQL for the back-end. The project follows the MVC design pattern for clean and maintainable code.",
+      "stack": [
+        "Html",
+        "CSS",
+        "Bootstrap",
+        "ReactJS",
+        "Node.Js",
+        "Express.Js"
+      ],
+      "github": "https://github.com/yesminalina/geekhub-marketplace",
+      "deploy": "https://geekhub-frontend.onrender.com"
+    },
+    {
+      "title": "Pizza Restaurant Frontend",
+      "img": "mamma-mia-home.png",
+      "description": "Front-end application  for a Pizza restaurant, including a shopping cart, built with React.Js and Bootstrap.",
+      "stack": [
+        "Html",
+        "CSS",
+        "Bootstrap",
+        "ReactJS"
+      ],
+      "github": "https://github.com/yesminalina/pizza-restaurant",
+      "deploy": "https://pizzamammamia.netlify.app/"
+    },
+    {
+      "title": "Cocktail Finder",
+      "img": "cocktail-finder-home.png",
+      "description": "Frontend application built with React that consumes the cocktaildb.com API, featuring a search tool to find cocktails based on selected ingredients.",
+      "stack": [
+        "Html",
+        "CSS",
+        "Bootstrap",
+        "ReactJS"
+      ],
+      "github": "https://github.com/yesminalina/cocktail-finder-react-api",
+      "deploy": "https://cocktailsfindernow.netlify.app/"
+    }
+  ]
+}
