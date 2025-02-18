@@ -1,17 +1,20 @@
-import { Element } from 'react-scroll'
+import { Element, Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} size='2x' className='me-3' />
   const githubIcon = <FontAwesomeIcon icon={faGithub} size='2x' className='me-3' />
+  const arrowDown = <FontAwesomeIcon icon={faAnglesDown} size='4x' />
   return (
     <Element name='about' className='md:flex md:justify-center md:align-bottom md:max-w-[1100px] min-h-svh mx-auto pt-28 text-olive'>
       <div className='md:flex md:self-end h-[540px] bg-hero-img bg-contain bg-center bg-no-repeat'>
         <div className='flex flex-col md:w-8/12'>
           <p className='text-xl text-pink'>Hey there, my name is</p>
-          <h1 className='text-start font-semibold text-8xl max-w-36'>Yesmin Pizarro<span className='text-pink'>.</span></h1>
+          <h1 className='text-start font-semibold text-8xl max-w-36'>Yesmin Pizarro<span className='text-olive_pale'>.</span></h1>
+          <Link className='mt-24 ms-36 alagn-bottom text-pink animate-bounce cursor-pointer' smooth duration={500} to='projects'>{arrowDown}</Link>
         </div>
         <div className='self-end md:w-4/12 md:mt-8 mb-8 ps-16'>
           <h2 className='text-3xl uppercase font-semibold'>JS Fullstack Developer</h2>
