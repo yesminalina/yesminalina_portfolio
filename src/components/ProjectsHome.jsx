@@ -27,7 +27,7 @@ const ProjectsHome = () => {
               <a href={project.deploy} target='_blank' rel='noreferrer'>{arrowIcon}</a>
               <a href={project.github} target='_blank' rel='noreferrer'>{githubIcon}</a>
             </div>
-            <p className='text-sm p-6 my-8 rounded-md bg-gradient-to-br from-mint to-yellow_pale shadow-xl'>{project.description}</p>
+            <p className='text-sm text-yellow_pale p-6 my-8 rounded-md shadow-xl bg-pink'>{project.description}</p>
             <div className='flex flex-wrap justify-start text-xs text-pink me-10'>
               {renderStack(project.stack)}
             </div>
@@ -35,7 +35,7 @@ const ProjectsHome = () => {
         </div>
         <div className='flex self-center col-start-6 col-span-12 relative group rounded-lg'>
           <img className='rounded-lg' src={project.img} />
-          <div className='absolute inset-0 rounded-lg opacity-80 cursor-pointer shadow-olive shadow-lg group-hover:shadow-inner' />
+          <div className='absolute inset-0 rounded-lg cursor-pointer shadow-lg bg-olive opacity-30 transition-opacity duration-500 ease-in-out hover:opacity-0' />
         </div>
       </ProjectBox>
 
