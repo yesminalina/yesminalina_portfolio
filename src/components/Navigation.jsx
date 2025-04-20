@@ -8,9 +8,9 @@ const Navigation = () => {
 
   return (
     <nav className='flex justify-between align-middle text-olive font-semibold py-10 px-40 w-full top-0 left-0 z-50 fixed backdrop-blur-md h-16'>
-      <div className='self-center'>
+      <Link to='about' smooth duration={500} spy onSetActive={handleSetActive} className='self-center cursor-pointer'>
         <img className='w-20' src='yp_logo.png' />
-      </div>
+      </Link>
       <div className='flex self-center'>
         <Link to='about' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'about' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>About me</Link>
         <Link to='projects' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'projects' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>Projects</Link>
