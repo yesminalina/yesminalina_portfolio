@@ -16,7 +16,7 @@ const StackBox = ({children}) => {
   }, [])
 
   return (
-    <article ref={ArticleRef} className={`transition-all duration-500 ease-in ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-40'} flex`}>
+    <article ref={ArticleRef} className={`transition-all duration-500 ease-in ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-40'} flex flex-col sm:flex-row`}>
       {children}
     </article>
   )
