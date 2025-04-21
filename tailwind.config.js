@@ -17,10 +17,8 @@ export default {
     },
     colors: {
       yellow_pale: '#FAF1E4',
-      khaki: '#8F733A',
       pink: '#B95879',
       mint: '#CEDEBD',
-      olive_pale: '#9EB384',
       olive: '#435334',
       slate: colors.slate
     }
