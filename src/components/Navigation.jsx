@@ -14,7 +14,7 @@ const Navigation = () => {
   const xIcon = <FontAwesomeIcon icon={faXmark} size='xl' className='items-center' />
 
   return (
-    <nav className='flex flex-col align-middle text-olive font-semibold py-6 sm:py-10 px-6 sm:px-40 w-full top-0 inset-x-0 z-50 fixed backdrop-blur-md sm:h-16'>
+    <nav className='flex flex-col justify-center align-middle py-6 sm:py-10 text-olive font-semibold px-6 sm:px-40 w-full top-0 inset-x-0 z-50 fixed backdrop-blur-md sm:h-16'>
       <div className='flex justify-between'>
         <Link to='about' smooth duration={500} spy onSetActive={handleSetActive} className='self-center cursor-pointer'>
           <img className='w-20' src='yp_logo.png' />
