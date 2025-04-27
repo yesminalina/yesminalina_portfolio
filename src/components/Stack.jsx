@@ -23,7 +23,7 @@ import Numpy from './Icons/Numpy'
 import Pandas from './Icons/Pandas'
 import Matplotlib from './Icons/Matplotlib'
 import Seaborn from './Icons/Seaborn'
-import ScikitLearn from './Icons/Scikitlearn'
+import ScikitLearn from './Icons/ScikitLearn'
 
 const Stack = () => {
   const myStack = Object.freeze(stack)
