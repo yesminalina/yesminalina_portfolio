@@ -1,14 +1,15 @@
 import Header from '../components/Header'
 import ProjectsHome from '../components/ProjectsHome'
 import Stack from '../components/Stack'
+import { Element } from 'react-scroll'
 
 const Home = () => {
   return (
-    <section className='mx-auto min-h-svh font-poppins'>
+    <Element name='home' className='min-h-svh font-poppins'>
       <Header />
       <ProjectsHome />
       <Stack />
-    </section>
+    </Element>
   )
 }
 
