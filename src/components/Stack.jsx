@@ -69,7 +69,7 @@ const Stack = () => {
   return (
     <Element name='stack' className='py-28 bg-yellow_pale min-h-svh'>
       <div className='flex flex-col justify-around align-middle md:max-w-[1100px] mx-auto'>
-        <h2 className='self-center text-4xl text-olive uppercase font-bold mb-24'>My Stack <span className='text-pink text-4xl'>.</span></h2>
+        <h2 className='self-center text-4xl text-olive uppercase font-bold mb-16 sm:mb-24'>My Stack <span className='text-pink text-4xl'>.</span></h2>
         <StackBox className='justify-around'>
           <article className='flex flex-col sm:w-1/4 mb-4 sm:me-4 p-4 rounded-lg shadow-xl bg-gradient-to-br from-mint '>
             <h3 className='uppercase text-olive font-semibold self-center mb-4'>Frontend</h3>
