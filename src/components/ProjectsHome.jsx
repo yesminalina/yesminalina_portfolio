@@ -43,7 +43,7 @@ const ProjectsHome = () => {
   }
 
   return (
-    <Element name='projects' id='projects' className='pt-28'>
+    <Element name='projects' id='projects' className='flex pt-28'>
       <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto'>
         <h2 className='self-center text-4xl text-olive uppercase font-bold mb-24'>Projects <span className='text-pink text-4xl'>.</span></h2>
         <div className='grid grid-cols-1 gap-48'>
