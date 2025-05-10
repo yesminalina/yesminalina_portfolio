@@ -20,22 +20,22 @@ const ProjectsHome = () => {
   const renderProjects = () => {
     return myProjects.map(project => (
       <ProjectBox key={project.title}>
-        <div className='col-span-7 col-end-7 flex flex-col absolute z-10 self-center py-3 px-3 '>
+        <div className='col-span-full sm:col-span-7 sm:col-end-7 flex flex-col sm:absolute sm:z-10 self-center py-3 px-3 '>
           <div className='mx-3 text-start'>
-            <h3 className='text-2xl inline text-olive font-semibold'>{project.title}</h3>
+            <h3 className='text-xl sm:text-2xl inline text-olive font-semibold'>{project.title}</h3>
             <div className='text-pink inline'>
               <a href={project.deploy} target='_blank' rel='noreferrer'>{arrowIcon}</a>
               <a href={project.github} target='_blank' rel='noreferrer'>{githubIcon}</a>
             </div>
-            <p className='text-sm text-yellow_pale p-6 my-8 rounded-md shadow-xl bg-pink'>{project.description}</p>
+            <p className='text-sm text-yellow_pale p-6 my-4 sm:my-8 rounded-md shadow-xl bg-pink'>{project.description}</p>
             <div className='flex flex-wrap justify-start text-xs text-pink me-10'>
               {renderStack(project.stack)}
             </div>
           </div>
         </div>
-        <div className='flex self-center col-start-6 col-span-12 relative group rounded-lg'>
+        <div className='flex self-center col-span-full sm:col-start-6 sm:col-span-12 sm:relative group rounded-lg px-6 sm:px-0'>
           <img className='rounded-lg' src={project.img} />
-          <div className='absolute inset-0 rounded-lg cursor-pointer shadow-lg bg-olive opacity-30 transition-opacity duration-500 ease-in-out hover:opacity-0' />
+          <div className='hidden sm:block absolute inset-0 rounded-lg cursor-pointer shadow-lg bg-olive opacity-30 transition-opacity duration-500 ease-in-out hover:opacity-0' />
         </div>
       </ProjectBox>
 
@@ -45,8 +45,8 @@ const ProjectsHome = () => {
   return (
     <Element name='projects' id='projects' className='flex pt-28'>
       <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto'>
-        <h2 className='self-center text-4xl text-olive uppercase font-bold mb-24'>Projects <span className='text-pink text-4xl'>.</span></h2>
-        <div className='grid grid-cols-1 gap-48'>
+        <h2 className='self-center text-4xl text-olive uppercase font-bold mb-8 sm:mb-24'>Projects <span className='text-pink text-4xl'>.</span></h2>
+        <div className='grid grid-cols-1 gap-24 sm:gap-48'>
           {renderProjects()}
         </div>
       </div>
