@@ -19,8 +19,8 @@ const Header = () => {
               <h2 className='text-xl md:text-3xl uppercase font-semibold'>JS Fullstack Developer</h2>
               <p className='text-pink font-semibold my-4'>Aplying and elevating my skills to create new things.</p>
               <article className='flex justify-start'>
-                <a href='https://www.linkedin.com/in/yesminpizarro/'>{linkedinIcon}</a>
-                <a href='https://github.com/yesminalina'>{githubIcon}</a>
+                <a href='https://www.linkedin.com/in/yesminpizarro/' target='_blank' rel='noreferrer'>{linkedinIcon}</a>
+                <a href='https://github.com/yesminalina' target='_blank' rel='noreferrer'>{githubIcon}</a>
               </article>
             </article>
             <Link className='hidden sm:block mt-24 ms-36 alagn-bottom text-pink animate-bounce cursor-pointer' smooth duration={500} to='projects'>{arrowDown}</Link>
@@ -31,8 +31,8 @@ const Header = () => {
           <p className='sm:block text-pink font-semibold mb-4'>- Scriptaceutical</p>
           <p className='mb-4 text-slate-500 text-md'>Applying and elevating my <span className='text-olive'>development skills</span>, leveraging my prior experience as a Pharmaceutical Product Developer to create new things and collaborate with <span className='text-olive'>innovative teams</span>.</p>
           <article className='flex'>
-            <a href='https://www.linkedin.com/in/yesminpizarro/'>{linkedinIcon}</a>
-            <a href='https://github.com/yesminalina'>{githubIcon}</a>
+            <a href='https://www.linkedin.com/in/yesminpizarro/' target='_blank' rel='noreferrer'>{linkedinIcon}</a>
+            <a href='https://github.com/yesminalina' target='_blank' rel='noreferrer'>{githubIcon}</a>
           </article>
         </section>
       </div>
