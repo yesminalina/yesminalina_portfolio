@@ -22,7 +22,7 @@ const ProjectsHome = () => {
       <ProjectBox key={project.title}>
         <div className='col-span-full sm:col-span-7 sm:col-end-7 flex flex-col sm:absolute sm:z-10 self-center py-3 px-3 '>
           <div className='mx-3 text-start'>
-            <h3 className='text-xl sm:text-2xl inline text-olive font-semibold'>{project.title}</h3>
+            <h3 className='text-xl sm:text-xl inline text-olive font-semibold'>{project.title}</h3>
             <div className='text-pink inline'>
               <a href={project.deploy} target='_blank' rel='noreferrer'>{arrowIcon}</a>
               <a href={project.github} target='_blank' rel='noreferrer'>{githubIcon}</a>
@@ -43,10 +43,10 @@ const ProjectsHome = () => {
   }
 
   return (
-    <Element name='projects' id='projects' className='flex pt-28'>
-      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto'>
-        <h2 className='self-center text-4xl text-olive uppercase font-bold mb-8 sm:mb-24'>Projects <span className='text-pink text-4xl'>.</span></h2>
-        <div className='grid grid-cols-1 gap-24 sm:gap-48'>
+    <Element name='projects' id='projects' className='flex py-24'>
+      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto sm:px-16'>
+        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 ps-6 sm:mb-28'>Projects <span className='text-pink text-4xl'>.</span></h2>
+        <div className='grid grid-cols-1 gap-24 sm:gap-28'>
           {renderProjects()}
         </div>
       </div>

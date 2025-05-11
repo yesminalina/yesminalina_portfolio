@@ -9,7 +9,7 @@ const Header = () => {
   const githubIcon = <FontAwesomeIcon icon={faGithub} size='2x' className='me-3' />
   const arrowDown = <FontAwesomeIcon icon={faAnglesDown} size='4x' />
   return (
-    <Element name='about' className='flex justify-center align-bottom md:max-w-[1100px] min-h-svh mx-auto sm:pt-28 text-olive'>
+    <Element name='about' className='flex justify-center align-bottom md:max-w-[1100px] min-h-svh mx-auto sm:pt-20 text-olive'>
       <div className='flex flex-col sm:flex sm:flex-row sm:justify-between md:self-end sm:h-[540px] bg-none sm:bg-hero-img bg-contain bg-bottom bg-no-repeat'>
         <section className='flex sm:w-8/12 min-h-dvh bg-hero-img bg-contain bg-bottom bg-no-repeat sm:bg-none px-6'>
           <div className='flex flex-col w-full sm:w-8/12 pt-24 sm:pt-0'>

@@ -16,10 +16,12 @@ export default {
       }
     },
     colors: {
-      yellow_pale: '#FAF1E4',
+      yellow_pale: '#FCF6ED',
+      white_warm: '#F8F7F2',
       pink: '#B95879',
       mint: '#CEDEBD',
-      olive: '#435334',
+      olive: '#2A4C4B',
+      text_main: '#182B2A',
       slate: colors.slate
     }
   },
