@@ -28,7 +28,6 @@ const Header = () => {
         </section>
         <section id='description' className='hidden sm:block self-end md:w-4/12 mt-20 md:mt-8 mb-8 ps-16'>
           <h2 className='text-3xl uppercase font-semibold'>JS Fullstack Developer</h2>
-          <p className='sm:block text-pink font-semibold mb-4'>- Scriptaceutical</p>
           <p className='mb-4 text-slate-500 text-md'>Applying and elevating my <span className='text-olive'>development skills</span>, leveraging my prior experience as a Pharmaceutical Product Developer to create new things and collaborate with <span className='text-olive'>innovative teams</span>.</p>
           <article className='flex'>
             <a href='https://www.linkedin.com/in/yesminpizarro/' target='_blank' rel='noreferrer'>{linkedinIcon}</a>

@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Geekhub Marketplace",
-      "img": "geekhub-gallery.png",
+      "img": "geekhub-gallery.webp",
       "description": "A Fullstack App for a Marketplace with shopping cart, built with React.js for a responsive front-end and Node.js, Express.js, and PostgreSQL for the back-end. The project follows the MVC design pattern for clean and maintainable code.",
       "stack": [
         "Html",
@@ -17,7 +17,7 @@
     },
     {
       "title": "Pizza Restaurant Frontend",
-      "img": "mamma-mia-home.png",
+      "img": "mamma-mia-home.webp",
       "description": "Front-end application  for a Pizza restaurant, including a shopping cart, built with React.Js and Bootstrap.",
       "stack": [
         "Html",
@@ -30,7 +30,7 @@
     },
     {
       "title": "Cocktail Finder",
-      "img": "cocktail-finder-home.png",
+      "img": "cocktail-finder-home.webp",
       "description": "Frontend application built with React that consumes the cocktaildb.com API, featuring a search tool to find cocktails based on selected ingredients.",
       "stack": [
         "Html",

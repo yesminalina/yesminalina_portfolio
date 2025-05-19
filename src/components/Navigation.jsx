@@ -20,7 +20,7 @@ const Navigation = () => {
     <nav className='flex flex-col justify-center align-middle w-full py-6 sm:py-10 text-olive font-semibold px-6 sm:px-40 top-0 inset-x-0 z-50 fixed backdrop-blur-md sm:h-16'>
       <div className='flex align-middle justify-between'>
         <Link to='about' smooth duration={500} spy onSetActive={handleSetActive} className='self-center cursor-pointer'>
-          <img className='w-16' src='yp_logo.png' />
+          <img className='w-16' src='yp_logo.webp' />
         </Link>
         <div className='flex sm:hidden'>
           <button onClick={toggleMenu}>

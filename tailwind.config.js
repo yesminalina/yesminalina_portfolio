@@ -12,7 +12,7 @@ export default {
         poppins: ['Poppins', 'sans-serif']
       },
       backgroundImage: {
-        'hero-img': "url('/foto-ypm-polera-stark-magik.png')"
+        'hero-img': "url('/foto-ypm-polera-stark-magik.webp')"
       }
     },
     colors: {
