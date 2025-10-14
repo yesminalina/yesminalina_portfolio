@@ -16,9 +16,21 @@
       "deploy": "https://geekhub-frontend.onrender.com"
     },
     {
+      "title": "RioLeufu Hotel",
+      "img": "rioleufu-home.webp",
+      "description": "Responsive frontend application for Hotel, built with React.js and Tailwind CSS, with an translation feature using i18next library.",
+      "stack": [
+        "ReactJS",
+        "TailwindCSS",
+        "i18next"
+      ],
+      "github": "https://github.com/yesminalina/rioleufu-web-react-ts",
+      "deploy": "https://rioleufu.netlify.app/"
+    },
+    {
       "title": "Pizza Restaurant Frontend",
       "img": "mamma-mia-home.webp",
-      "description": "Front-end application  for a Pizza restaurant, including a shopping cart, built with React.Js and Bootstrap.",
+      "description": "Frontend application  for a Pizza restaurant, including a shopping cart, built with React.Js and Bootstrap.",
       "stack": [
         "Html",
         "CSS",

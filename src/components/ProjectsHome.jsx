@@ -27,7 +27,7 @@ const ProjectsHome = () => {
               <a href={project.deploy} target='_blank' rel='noreferrer'>{arrowIcon}</a>
               <a href={project.github} target='_blank' rel='noreferrer'>{githubIcon}</a>
             </div>
-            <p className='text-sm text-yellow_pale p-6 my-4 sm:my-8 rounded-md shadow-xl bg-pink'>{project.description}</p>
+            <p className='text-sm text-yellow_pale p-6 my-4 sm:my-8 rounded-md shadow-xl bg-olive/60 border-olive/40 border'>{project.description}</p>
             <div className='flex flex-wrap justify-start text-xs text-pink me-10'>
               {renderStack(project.stack)}
             </div>
@@ -35,7 +35,7 @@ const ProjectsHome = () => {
         </div>
         <div className='flex self-center col-span-full sm:col-start-6 sm:col-span-12 sm:relative group rounded-lg px-6 sm:px-0'>
           <img className='rounded-lg' src={project.img} />
-          <div className='hidden sm:block absolute inset-0 rounded-lg cursor-pointer shadow-lg bg-olive opacity-30 transition-opacity duration-500 ease-in-out hover:opacity-0' />
+          <div className='hidden sm:block absolute inset-0 rounded-lg cursor-pointer shadow-lg bg-olive opacity-50 transition-opacity duration-500 ease-in-out hover:opacity-0' />
         </div>
       </ProjectBox>
 
@@ -43,10 +43,16 @@ const ProjectsHome = () => {
   }
 
   return (
-    <Element name='projects' id='projects' className='flex py-24'>
-      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto sm:px-16'>
-        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 ps-6 sm:mb-28'>Projects <span className='text-pink text-4xl'>.</span></h2>
-        <div className='grid grid-cols-1 gap-24 sm:gap-28'>
+    <Element name='projects' id='projects' className='flex flex-col pb-24'>
+      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100'>
+        <g fill='#B95879'>
+          <path d='M0 0v100c250 0 375-24 500-48 125 24 250 48 500 48V0H0Z' opacity='.5' />
+          <path d='M0 0v4c250 0 375 24 500 48C625 28 750 4 1000 4V0H0Z' />
+        </g>
+      </svg>
+      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto'>
+        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 ps-6 sm:my-20'>Projects <span className='text-pink text-4xl'>.</span></h2>
+        <div className='grid grid-cols-1 gap-24 sm:gap-28 sm:px-16'>
           {renderProjects()}
         </div>
       </div>
