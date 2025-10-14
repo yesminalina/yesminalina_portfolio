@@ -22,6 +22,7 @@ const Navigation = () => {
         <Link to='about' smooth duration={500} spy onSetActive={handleSetActive} className='self-center cursor-pointer'>
           <img className='w-16' src='yp_logo.webp' />
         </Link>
+        {/* Mobile menu icon */}
         <div className='flex sm:hidden'>
           <button onClick={toggleMenu}>
             {isOpen ? xIcon : menuIcon}
@@ -29,7 +30,7 @@ const Navigation = () => {
         </div>
         {/* Desktop Menu */}
         <div className='hidden sm:flex align-middle self-center'>
-          <Link to='home' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'about' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>About me</Link>
+          <Link to='about' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'about' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>About me</Link>
           <Link to='projects' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'projects' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>Projects</Link>
           <Link to='stack' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'stack' ? 'underline underline-offset-4 decoration-pink decoration-2' : 'text-olive'}`}>My Stack</Link>
           <a className='border-2 rounded-md px-4 py-1 text-pink transition-transform ease-in-out duration-300 hover:scale-110 hover:cursor-pointer' href='/CV_Yesmin_Pizarro_Dev.pdf' download='CV_Yesmin_Pizarro_Dev.pdf'>Resume</a>

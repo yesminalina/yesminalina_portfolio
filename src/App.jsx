@@ -1,20 +1,21 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Home from './views/Home'
 import './App.css'
-import Navigation from './components/Navigation'
-import Footer from './components/Footer'
+import NotFound from './views/NotFound'
+import Layout from './views/Layout'
 
 const App = () => {
   return (
-    <main className='bg-yellow_pale overflow-x-hidden'>
-      <Navigation />
-      <BrowserRouter>
-        <Routes>
+    <BrowserRouter>
+      <Routes>
+        {/* Navbar/Footer routes */}
+        <Route element={<Layout />}>
           <Route path='/' element={<Home />} />
-        </Routes>
-      </BrowserRouter>
-      <Footer />
-    </main>
+        </Route>
+        {/* Routers without navbar */}
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
