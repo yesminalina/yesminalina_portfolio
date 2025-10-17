@@ -23,10 +23,18 @@ const ProjectsHome = () => {
         <div className='col-span-full sm:col-span-7 sm:col-end-7 flex flex-col sm:absolute sm:z-10 self-center py-3 px-3 '>
           <div className='mx-3 text-start'>
             <h3 className='text-xl sm:text-xl inline text-olive font-semibold'>{project.title}</h3>
-            <div className='text-pink inline'>
-              <a href={project.deploy} target='_blank' rel='noreferrer'>{arrowIcon}</a>
-              <a href={project.github} target='_blank' rel='noreferrer'>{githubIcon}</a>
-            </div>
+            {
+              (project.deploy || project.github)
+                ? <div className='text-pink inline'>
+                  <a href={project.deploy} target='_blank' rel='noreferrer'>{arrowIcon}</a>
+                  <a href={project.github} target='_blank' rel='noreferrer'>{githubIcon}</a>
+                </div>
+                : <div className='text-slate-500 inline'>
+                  <a disabled rel='noreferrer'>{arrowIcon}</a>
+                  <a disabled target='_blank' rel='noreferrer'>{githubIcon}</a>
+                  <span className='text-sm text-slate-500'>(Private repository)</span>
+                </div>
+              }
             <p className='text-sm text-yellow_pale p-6 my-4 sm:my-8 rounded-md shadow-xl bg-olive/60 border-olive/40 border'>{project.description}</p>
             <div className='flex flex-wrap justify-start text-xs text-pink me-10'>
               {renderStack(project.stack)}
@@ -51,7 +59,7 @@ const ProjectsHome = () => {
         </g>
       </svg>
       <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto'>
-        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 ps-6 sm:my-20'>Projects <span className='text-pink text-4xl'>.</span></h2>
+        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 ps-6 sm:my-20 sm:pb-16'>Projects <span className='text-pink text-4xl'>.</span></h2>
         <div className='grid grid-cols-1 gap-24 sm:gap-28 sm:px-16'>
           {renderProjects()}
         </div>

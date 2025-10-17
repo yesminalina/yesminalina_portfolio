@@ -1,5 +1,31 @@
 {
   "projects": [
+        {
+      "title": "Backend for Collaborative Academic Repository",
+      "img": "sintesis-swagger.webp",
+      "description": "Project in development: backend for a collaborative repository of academic articles, built in TypeScript with Node.js, Express, and PostgreSQL. Implements JWT authentication with refresh tokens and HTTP-only cookies, role-based access control (RBAC), and Swagger/OpenAPI documentation.",
+      "stack": [
+        "Typescript",
+        "Node.Js",
+        "Express.Js",
+        "JWT",
+        "PostgreSQL",
+        "Supabase"
+      ]
+    },
+    {
+      "title": "RioLeufu Hotel",
+      "img": "rioleufu-home.webp",
+      "description": "Responsive frontend application for Hotel, built with React.js and Tailwind CSS, with an translation feature using i18next library.",
+      "stack": [
+        "ReactJS",
+        "Typescript",
+        "TailwindCSS",
+        "i18next"
+      ],
+      "github": "https://github.com/yesminalina/rioleufu-web-react-ts",
+      "deploy": "https://rioleufu.netlify.app/"
+    },
     {
       "title": "Geekhub Marketplace",
       "img": "geekhub-gallery.webp",
@@ -14,18 +40,6 @@
       ],
       "github": "https://github.com/yesminalina/geekhub-marketplace",
       "deploy": "https://geekhub-marketplace.onrender.com"
-    },
-    {
-      "title": "RioLeufu Hotel",
-      "img": "rioleufu-home.webp",
-      "description": "Responsive frontend application for Hotel, built with React.js and Tailwind CSS, with an translation feature using i18next library.",
-      "stack": [
-        "ReactJS",
-        "TailwindCSS",
-        "i18next"
-      ],
-      "github": "https://github.com/yesminalina/rioleufu-web-react-ts",
-      "deploy": "https://rioleufu.netlify.app/"
     },
     {
       "title": "Pizza Restaurant Frontend",
