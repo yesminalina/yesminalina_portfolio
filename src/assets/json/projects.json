@@ -4,6 +4,12 @@
       "title": "Geekhub Marketplace",
       "img": "geekhub-gallery.webp",
       "description": "A Fullstack App for a Marketplace with shopping cart, built with React.js for a responsive front-end and Node.js, Express.js, and PostgreSQL for the back-end. The project follows the MVC design pattern for clean and maintainable code.",
+      "features": [
+        "TODO: feature 1",
+        "TODO: feature 2",
+        "TODO: feature 3",
+        "TODO: feature 4"
+      ],
       "stack": [
         "Html",
         "CSS",
@@ -19,6 +25,12 @@
       "title": "Backend for Collaborative Academic Repository",
       "img": "sintesis-swagger.webp",
       "description": "Project in development: backend for a collaborative repository of academic articles, built in TypeScript with Node.js, Express, and PostgreSQL. Implements JWT authentication with refresh tokens and HTTP-only cookies, role-based access control (RBAC), and Swagger/OpenAPI documentation.",
+      "features": [
+        "TODO: feature 1",
+        "TODO: feature 2",
+        "TODO: feature 3",
+        "TODO: feature 4"
+      ],
       "stack": [
         "Typescript",
         "Node.Js",
@@ -32,6 +44,12 @@
       "title": "RioLeufu Hotel",
       "img": "rioleufu-home.webp",
       "description": "Responsive frontend application for Hotel, built with React.js and Tailwind CSS, with an translation feature using i18next library.",
+      "features": [
+        "TODO: feature 1",
+        "TODO: feature 2",
+        "TODO: feature 3",
+        "TODO: feature 4"
+      ],
       "stack": [
         "ReactJS",
         "Typescript",

@@ -13,40 +13,79 @@ const ProjectsHome = () => {
 
   const renderStack = (projectStack) => {
     return projectStack.map((stack) => (
-      <h4 className='me-2 mb-2 py-1 px-2 border-2 border-pink rounded-lg' key={stack}>{stack}</h4>
+      <span
+        className='me-2 mb-2 py-1 px-3 border border-pink rounded-full text-xs text-pink font-medium'
+        key={stack}
+      >
+        {stack}
+      </span>
+    ))
+  }
+
+  const renderFeatures = (features) => {
+    return features.map((feature, i) => (
+      <li key={i} className='flex items-start gap-2 text-sm text-text_main'>
+        <span className='text-pink mt-0.5 shrink-0'>▸</span>
+        <span>{feature}</span>
+      </li>
     ))
   }
 
   const renderProjects = () => {
-    return myProjects.map(project => (
-      <ProjectBox key={project.title}>
-        <div className='col-span-full sm:col-span-7 sm:col-end-7 flex flex-col sm:absolute sm:z-10 self-center py-3 px-3 '>
-          <div className='mx-3 text-start'>
-            <h3 className='text-xl sm:text-xl inline text-olive font-semibold'>{project.title}</h3>
-            {
-              (project.deploy || project.github)
-                ? <div className='text-pink inline'>
-                  <a href={project.deploy} target='_blank' rel='noreferrer'>{arrowIcon}</a>
-                  <a href={project.github} target='_blank' rel='noreferrer'>{githubIcon}</a>
-                </div>
-                : <div className='text-slate-500 inline'>
-                  <a disabled rel='noreferrer'>{arrowIcon}</a>
-                  <a disabled target='_blank' rel='noreferrer'>{githubIcon}</a>
-                  <span className='text-sm text-slate-500'>(Private repository)</span>
-                </div>
+    return myProjects.map((project, index) => (
+      <ProjectBox key={project.title} reverse={index % 2 === 1}>
+        {/* Image column */}
+        <div className='sm:w-5/12 shrink-0 self-stretch'>
+          <img
+            className='rounded-xl w-full h-full object-cover object-top shadow-lg'
+            src={project.img}
+            alt={project.title}
+          />
+        </div>
+
+        {/* Content column */}
+        <div className='sm:w-7/12 flex flex-col justify-center bg-white_warm border border-olive/20 rounded-xl shadow-lg p-6 sm:p-8 gap-5'>
+
+          {/* Title + links */}
+          <div>
+            <div className='flex flex-wrap items-center gap-x-1 gap-y-1 mb-1'>
+              <h3 className='text-xl sm:text-2xl font-semibold text-olive me-2'>{project.title}</h3>
+              {
+                (project.deploy || project.github)
+                  ? <span className='text-pink'>
+                    <a href={project.deploy} target='_blank' rel='noreferrer' className='hover:opacity-70 transition-opacity'>{arrowIcon}</a>
+                    <a href={project.github} target='_blank' rel='noreferrer' className='hover:opacity-70 transition-opacity'>{githubIcon}</a>
+                  </span>
+                  : <span className='flex items-center gap-2 text-slate-400'>
+                    <span>{arrowIcon}</span>
+                    <span>{githubIcon}</span>
+                    <span className='text-xs text-slate-400'>(Private repository)</span>
+                  </span>
               }
-            <p className='text-sm text-yellow_pale p-6 my-4 sm:my-8 rounded-md shadow-xl bg-olive/60 border-olive/40 border'>{project.description}</p>
-            <div className='flex flex-wrap justify-start text-xs text-pink me-10'>
+            </div>
+            <p className='text-sm text-slate-500 leading-relaxed'>{project.description}</p>
+          </div>
+
+          {/* Features */}
+          {project.features && project.features.length > 0 && (
+            <div>
+              <h4 className='text-xs uppercase tracking-widest font-semibold text-pink mb-2'>Features</h4>
+              <ul className='flex flex-col gap-1.5'>
+                {renderFeatures(project.features)}
+              </ul>
+            </div>
+          )}
+
+          {/* Stack */}
+          <div>
+            <h4 className='text-xs uppercase tracking-widest font-semibold text-pink mb-2'>Stack & Tools</h4>
+            <div className='flex flex-wrap'>
               {renderStack(project.stack)}
             </div>
           </div>
-        </div>
-        <div className='flex self-center col-span-full sm:col-start-6 sm:col-span-12 sm:relative group rounded-lg px-6 sm:px-0'>
-          <img className='rounded-lg' src={project.img} />
-          <div className='hidden sm:block absolute inset-0 rounded-lg cursor-pointer shadow-lg bg-olive opacity-50 transition-opacity duration-500 ease-in-out hover:opacity-0' />
+
         </div>
       </ProjectBox>
-
     ))
   }
 
@@ -58,9 +97,11 @@ const ProjectsHome = () => {
           <path d='M0 0v4c250 0 375 24 500 48C625 28 750 4 1000 4V0H0Z' />
         </g>
       </svg>
-      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto'>
-        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 ps-6 sm:my-20 sm:pb-16'>Projects <span className='text-pink text-4xl'>.</span></h2>
-        <div className='grid grid-cols-1 gap-24 sm:gap-28 sm:px-16'>
+      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto w-full px-6'>
+        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 sm:my-20 sm:pb-16'>
+          Projects <span className='text-pink text-4xl'>.</span>
+        </h2>
+        <div className='flex flex-col gap-16 sm:gap-24'>
           {renderProjects()}
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const ProjectBox = ({ children }) => {
+const ProjectBox = ({ children, reverse = false }) => {
   const ArticleRef = useRef(null)
   const [visible, setVisible] = useState(false)
 
@@ -9,14 +9,19 @@ const ProjectBox = ({ children }) => {
       if (entry.isIntersecting) {
         setVisible(true)
       }
-    }, { threshold: 0.4 })
+    }, { threshold: 0.2 })
 
     if (ArticleRef.current) { observer.observe(ArticleRef.current) }
     return () => observer.disconnect()
   }, [])
 
+  const slideClass = reverse ? '-translate-x-40' : 'translate-x-40'
+
   return (
-    <article ref={ArticleRef} className={`transition-all duration-500 ease-in ${visible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-40'} grid grid-cols-12 sm:w-11/12 m-auto`}>
+    <article
+      ref={ArticleRef}
+      className={`transition-all duration-500 ease-in ${visible ? 'opacity-100 translate-x-0' : `opacity-0 ${slideClass}`} flex flex-col ${reverse ? 'sm:flex-row-reverse' : 'sm:flex-row'} gap-6 sm:gap-8 w-full`}
+    >
       {children}
     </article>
   )
