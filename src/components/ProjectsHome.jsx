@@ -14,7 +14,7 @@ const ProjectsHome = () => {
   const renderStack = (projectStack) => {
     return projectStack.map((stack) => (
       <span
-        className='me-2 mb-2 py-1 px-3 border border-pink rounded-full text-xs text-pink font-medium'
+        className='me-2 mb-2 py-1 px-3 border border-pink rounded-full text-xs text-pink font-medium bg-pink/10'
         key={stack}
       >
         {stack}
@@ -24,7 +24,7 @@ const ProjectsHome = () => {
 
   const renderFeatures = (features) => {
     return features.map((feature, i) => (
-      <li key={i} className='flex items-start gap-2 text-sm text-text_main'>
+      <li key={i} className='flex items-start gap-2 text-sm text-slate-200'>
         <span className='text-pink mt-0.5 shrink-0'>▸</span>
         <span>{feature}</span>
       </li>
@@ -37,33 +37,33 @@ const ProjectsHome = () => {
         {/* Image column */}
         <div className='sm:w-5/12 shrink-0 self-stretch'>
           <img
-            className='rounded-xl w-full h-full object-cover object-top shadow-lg'
+            className='rounded-xl w-full h-full object-cover object-left-top shadow-lg ring-1 ring-white_warm/15'
             src={project.img}
             alt={project.title}
           />
         </div>
 
-        {/* Content column */}
-        <div className='sm:w-7/12 flex flex-col justify-center bg-white_warm border border-olive/20 rounded-xl shadow-lg p-6 sm:p-8 gap-5'>
+        {/* Content column — frosted glass */}
+        <div className='sm:w-7/12 flex flex-col justify-center rounded-xl p-6 sm:p-8 gap-5 bg-gradient-to-br from-white_warm/10 to-white_warm/5 backdrop-blur-xl ring-1 ring-white_warm/15 border-t border-white_warm/20 shadow-2xl'>
 
           {/* Title + links */}
           <div>
             <div className='flex flex-wrap items-center gap-x-1 gap-y-1 mb-1'>
-              <h3 className='text-xl sm:text-2xl font-semibold text-olive me-2'>{project.title}</h3>
+              <h3 className='text-xl sm:text-2xl font-semibold text-yellow_pale me-2'>{project.title}</h3>
               {
                 (project.deploy || project.github)
                   ? <span className='text-pink'>
                     <a href={project.deploy} target='_blank' rel='noreferrer' className='hover:opacity-70 transition-opacity'>{arrowIcon}</a>
                     <a href={project.github} target='_blank' rel='noreferrer' className='hover:opacity-70 transition-opacity'>{githubIcon}</a>
                   </span>
-                  : <span className='flex items-center gap-2 text-slate-400'>
+                  : <span className='flex items-center gap-2 text-slate-300'>
                     <span>{arrowIcon}</span>
                     <span>{githubIcon}</span>
                     <span className='text-xs text-slate-400'>(Private repository)</span>
                   </span>
               }
             </div>
-            <p className='text-sm text-slate-500 leading-relaxed'>{project.description}</p>
+            <p className='text-sm text-slate-300 leading-relaxed'>{project.description}</p>
           </div>
 
           {/* Features */}
@@ -90,19 +90,29 @@ const ProjectsHome = () => {
   }
 
   return (
-    <Element name='projects' id='projects' className='flex flex-col pb-24'>
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100'>
-        <g fill='#B95879'>
-          <path d='M0 0v100c250 0 375-24 500-48 125 24 250 48 500 48V0H0Z' opacity='.5' />
-          <path d='M0 0v4c250 0 375 24 500 48C625 28 750 4 1000 4V0H0Z' />
-        </g>
-      </svg>
-      <div className='flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto w-full px-6'>
-        <h2 className='self-start text-3xl text-olive uppercase font-bold mb-8 sm:my-20 sm:pb-16'>
-          Projects <span className='text-pink text-4xl'>.</span>
-        </h2>
-        <div className='flex flex-col gap-16 sm:gap-24'>
-          {renderProjects()}
+    <Element name='projects' id='projects' className='flex flex-col'>
+      {/* Dark band */}
+      <div className='relative overflow-hidden bg-text_main pb-24 sm:pb-60'>
+
+        {/* Ambient pink glow — top right */}
+        <div className='pointer-events-none absolute -top-32 -right-24 w-[600px] h-[400px] rounded-full bg-pink/20 blur-3xl' />
+
+        {/* Ambient pink glow — bottom left */}
+        <div className='pointer-events-none absolute -bottom-32 -left-24 w-[600px] h-[400px] rounded-full bg-pink/20 blur-3xl' />
+
+        <div className='relative flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto w-full px-6'>
+
+          {/* Section heading */}
+          <div className='self-start sm:my-20'>
+            <p className='text-xs uppercase tracking-widest font-semibold text-pink mb-2'>Selected work</p>
+            <h2 className='text-3xl text-yellow_pale uppercase font-bold'>
+              Projects <span className='text-pink text-4xl'>.</span>
+            </h2>
+          </div>
+
+          <div className='flex flex-col gap-16 sm:gap-24'>
+            {renderProjects()}
+          </div>
         </div>
       </div>
     </Element>
