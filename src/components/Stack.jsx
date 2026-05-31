@@ -67,11 +67,13 @@ const Stack = () => {
   }
 
   return (
-    <Element name='stack' id='stack' className='pt-20 sm:py-20 min-h-svh'>
-      <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100'>
-        <path d='M0 0v100-79.4a1892 1892 0 0 1 500 0l500 66.7V0H0Z' fill='#B95879' />
-      </svg>
-      <div className='flex flex-col justify-around align-middle md:max-w-[1100px] mx-auto'>
+    <Element name='stack' id='stack' className='relative overflow-hidden min-h-svh flex flex-col justify-center'>
+      {/* Ambient glow — top center, near title */}
+      <div className='pointer-events-none absolute inset-0 overflow-hidden' aria-hidden='true'>
+        <div className='absolute -top-24 -right-24 w-[500px] h-[300px] rounded-full bg-mint/40 blur-3xl' />
+      </div>
+
+      <div className='relative z-10 flex flex-col justify-around align-middle md:max-w-[1100px] mx-auto'>
         <h2 className='self-start text-3xl text-olive uppercase font-bold mb-16 ps-6 sm:mb-24'>My Stack <span className='text-pink text-4xl'>.</span></h2>
         <section className='justify-around flex flex-col sm:flex-row px-6'>
           <StackBox>
