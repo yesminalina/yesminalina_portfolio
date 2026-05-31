@@ -6,9 +6,7 @@ const StackBox = ({children}) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setVisible(true)
-      }
+      setVisible(entry.isIntersecting)
     }, { threshold: 0.4 })
 
     if (ArticleRef.current) { observer.observe(ArticleRef.current) }
