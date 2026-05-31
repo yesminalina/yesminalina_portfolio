@@ -1,12 +1,12 @@
 {
   "projects": [
     {
-      "title": "Registro Cosmético — Regulatory Consultancy",
+      "title": "Consultancy Landing with Automated Funnel",
       "img": "registro-cosmetico.webp",
-      "description": "Production site for a cosmetics regulatory consultancy handling import and ISPCH registration in Chile. Static Astro landing with an onboarding funnel, import guide, diagnostic quiz, and consultation booking integrated with Google Calendar and Brevo.",
+      "description": "Production site for a cosmetics regulatory consultancy handling ISPCH registration for imported cosmetics in Chile. Static Astro landing with an onboarding funnel, import guide, diagnostic quiz with lead capture, and consultation booking integrated with Google Calendar and Brevo.",
       "features": [
-        "Consultation booking: free slots read from Google Calendar, events auto-created to block each slot",
         "Lead capture in Brevo with automated confirmation emails",
+        "Consultation booking: free slots read from Google Calendar, events auto-created to block each slot, and automated emails",
         "Diagnostic quiz and import guide built with Astro content collections",
         "SEO with JSON-LD, automatic sitemap and per-page metadata"
       ],
@@ -22,9 +22,9 @@
       "imgAlign": "center"
     },
     {
-      "title": "Geekhub Marketplace",
+      "title": "Fullstack Marketplace",
       "img": "geekhub-gallery.webp",
-      "description": "Fullstack marketplace for geek merchandise with user accounts, product listings, shopping cart and ratings. Backend follows an MVC architecture; React frontend manages global state with the Context API.",
+      "description": "Marketplace for geek merchandise with user accounts, product listings, shopping cart and ratings. Backend follows an MVC architecture; React frontend manages global state with the Context API.",
       "features": [
         "JWT authentication with bcrypt-hashed passwords",
         "Shopping cart and star-based product ratings",
