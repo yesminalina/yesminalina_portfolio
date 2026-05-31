@@ -50,18 +50,14 @@ const ProjectsHome = () => {
           <div>
             <div className='flex flex-wrap items-center gap-x-1 gap-y-1 mb-1'>
               <h3 className='text-xl sm:text-2xl font-semibold text-yellow_pale me-2'>{project.title}</h3>
-              {
-                (project.deploy || project.github)
-                  ? <span className='text-pink'>
-                    <a href={project.deploy} target='_blank' rel='noreferrer' className='hover:opacity-70 transition-opacity'>{arrowIcon}</a>
-                    <a href={project.github} target='_blank' rel='noreferrer' className='hover:opacity-70 transition-opacity'>{githubIcon}</a>
-                  </span>
-                  : <span className='flex items-center gap-2 text-slate-300'>
-                    <span>{arrowIcon}</span>
-                    <span>{githubIcon}</span>
-                    <span className='text-xs text-slate-400'>(Private repository)</span>
-                  </span>
-              }
+              <span className='flex items-center gap-2'>
+                {project.deploy && (
+                  <a href={project.deploy} target='_blank' rel='noreferrer' className='text-pink hover:opacity-70 transition-opacity'>{arrowIcon}</a>
+                )}
+                {project.github
+                  ? <a href={project.github} target='_blank' rel='noreferrer' className='text-pink hover:opacity-70 transition-opacity'>{githubIcon}</a>
+                  : <span className='flex items-center gap-1 text-slate-300'>{githubIcon}<span className='text-xs text-slate-400'>(Private repository)</span></span>}
+              </span>
             </div>
             <p className='text-sm text-slate-300 leading-relaxed'>{project.description}</p>
           </div>

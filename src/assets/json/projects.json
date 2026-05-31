@@ -1,14 +1,34 @@
 {
   "projects": [
     {
+      "title": "Registro Cosmético — Regulatory Consultancy",
+      "img": "registro-cosmetico.webp",
+      "description": "Production site for a cosmetics regulatory consultancy handling import and ISPCH registration in Chile. Static Astro landing with an onboarding funnel, import guide, diagnostic quiz, and consultation booking integrated with Google Calendar and Brevo.",
+      "features": [
+        "Consultation booking: free slots read from Google Calendar, events auto-created to block each slot",
+        "Lead capture in Brevo with automated confirmation emails",
+        "Diagnostic quiz and import guide built with Astro content collections",
+        "SEO with JSON-LD, automatic sitemap and per-page metadata"
+      ],
+      "stack": [
+        "Astro",
+        "Typescript",
+        "TailwindCSS",
+        "Google Calendar API",
+        "Brevo",
+        "Netlify"
+      ],
+      "deploy": "https://www.registrocosmetico.cl"
+    },
+    {
       "title": "Geekhub Marketplace",
       "img": "geekhub-gallery.webp",
-      "description": "A Fullstack App for a Marketplace with shopping cart, built with React.js for a responsive front-end and Node.js, Express.js, and PostgreSQL for the back-end. The project follows the MVC design pattern for clean and maintainable code.",
+      "description": "Fullstack marketplace for geek merchandise with user accounts, product listings, shopping cart and ratings. Backend follows an MVC architecture; React frontend manages global state with the Context API.",
       "features": [
-        "TODO: feature 1",
-        "TODO: feature 2",
-        "TODO: feature 3",
-        "TODO: feature 4"
+        "JWT authentication with bcrypt-hashed passwords",
+        "Shopping cart and star-based product ratings",
+        "Users can list, edit and delete their own products",
+        "MVC backend tested with Vitest + Supertest"
       ],
       "stack": [
         "Html",
@@ -16,7 +36,9 @@
         "Bootstrap",
         "ReactJS",
         "Node.Js",
-        "Express.Js"
+        "Express.Js",
+        "PostgreSQL",
+        "JWT"
       ],
       "github": "https://github.com/yesminalina/geekhub-marketplace",
       "deploy": "https://geekhub-marketplace.onrender.com"
@@ -26,35 +48,38 @@
       "img": "sintesis-swagger.webp",
       "description": "Project in development: backend for a collaborative repository of academic articles, built in TypeScript with Node.js, Express, and PostgreSQL. Implements JWT authentication with refresh tokens and HTTP-only cookies, role-based access control (RBAC), and Swagger/OpenAPI documentation.",
       "features": [
-        "TODO: feature 1",
-        "TODO: feature 2",
-        "TODO: feature 3",
-        "TODO: feature 4"
+        "JWT access tokens with refresh tokens in HttpOnly cookies",
+        "Role-based access control (reader / editor / administrator)",
+        "Backoffice user management with pagination, filtering and sorting",
+        "Documented with Swagger/OpenAPI, Dockerized with PostgreSQL"
       ],
       "stack": [
         "Typescript",
         "Node.Js",
         "Express.Js",
-        "JWT",
         "PostgreSQL",
-        "Supabase"
+        "JWT",
+        "Swagger",
+        "Docker"
       ]
     },
     {
       "title": "RioLeufu Hotel",
       "img": "rioleufu-home.webp",
-      "description": "Responsive frontend application for Hotel, built with React.js and Tailwind CSS, with an translation feature using i18next library.",
+      "description": "Responsive hotel website built with React and Tailwind CSS, with multi-language support via i18next and automatic browser-language detection.",
       "features": [
-        "TODO: feature 1",
-        "TODO: feature 2",
-        "TODO: feature 3",
-        "TODO: feature 4"
+        "Multi-language UI with i18next + automatic language detection",
+        "Fully responsive design with Tailwind CSS",
+        "Client-side routing with React Router",
+        "Prebuilt UI components via Flowbite-React"
       ],
       "stack": [
         "ReactJS",
         "Typescript",
         "TailwindCSS",
-        "i18next"
+        "i18next",
+        "React Router",
+        "Flowbite"
       ],
       "github": "https://github.com/yesminalina/rioleufu-web-react-ts",
       "deploy": "https://rioleufu.netlify.app/"
