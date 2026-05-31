@@ -8,6 +8,10 @@ import projects from '../assets/json/projects.json'
 const ProjectsHome = () => {
   const arrowIcon = <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='lg' className='ms-3 mt-1 me-3' />
   const githubIcon = <FontAwesomeIcon icon={faGithub} size='lg' className='mt-1 me-3' />
+  const IMG_ALIGN = {
+    left: 'object-left-top',
+    center: 'object-top'
+  }
 
   const { projects: myProjects } = projects
 
@@ -37,7 +41,7 @@ const ProjectsHome = () => {
         {/* Image column */}
         <div className='sm:w-5/12 shrink-0 self-stretch'>
           <img
-            className='rounded-xl w-full h-full object-cover object-left-top shadow-lg ring-1 ring-white_warm/15'
+            className={`rounded-xl w-full h-full object-cover ${IMG_ALIGN[project.imgAlign] ?? IMG_ALIGN.left} shadow-lg ring-1 ring-white_warm/15`}
             src={project.img}
             alt={project.title}
           />

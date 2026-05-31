@@ -18,7 +18,8 @@
         "Brevo",
         "Netlify"
       ],
-      "deploy": "https://www.registrocosmetico.cl"
+      "deploy": "https://www.registrocosmetico.cl",
+      "imgAlign": "center"
     },
     {
       "title": "Geekhub Marketplace",
@@ -41,7 +42,8 @@
         "JWT"
       ],
       "github": "https://github.com/yesminalina/geekhub-marketplace",
-      "deploy": "https://geekhub-marketplace.onrender.com"
+      "deploy": "https://geekhub-marketplace.onrender.com",
+      "imgAlign": "center"
     },
     {
       "title": "Backend for Collaborative Academic Repository",
