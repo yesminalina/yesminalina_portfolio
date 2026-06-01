@@ -73,7 +73,7 @@ const Stack = () => {
         <div className='absolute -top-24 -right-24 w-[500px] h-[300px] rounded-full bg-mint/40 blur-3xl' />
       </div>
 
-      <div className='relative z-10 flex flex-col justify-around align-middle md:max-w-[1100px] mx-auto'>
+      <div className='relative z-10 flex flex-col justify-around align-middle md:max-w-[1100px] mx-auto my-24'>
         <h2 className='self-start text-3xl text-olive uppercase font-bold mb-16 ps-6 sm:mb-24'>My Stack <span className='text-pink text-4xl'>.</span></h2>
         <section className='justify-around flex flex-col sm:flex-row px-6'>
           <StackBox>

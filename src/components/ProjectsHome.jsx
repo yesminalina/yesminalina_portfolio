@@ -103,7 +103,7 @@ const ProjectsHome = () => {
         <div className='relative flex flex-col justify-between align-middle md:max-w-[1100px] mx-auto w-full px-6'>
 
           {/* Section heading */}
-          <div className='self-start sm:my-20'>
+          <div className='self-start my-24 sm:my-20'>
             <p className='text-xs uppercase tracking-widest font-semibold text-pink mb-2'>Selected work</p>
             <h2 className='text-3xl text-yellow_pale uppercase font-bold'>
               Projects <span className='text-pink text-4xl'>.</span>
