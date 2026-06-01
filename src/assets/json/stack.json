@@ -1,8 +1,9 @@
 {
   "stack": {
-    "frontend": ["Html", "CSS", "Bootstrap", "TailwindCSS", "Javascript", "ReactJS", "Vite"],
-    "backend": ["Node.js", "Express.js", "Flask", "PostgreSQL", "MySQL", "Swagger"],
-    "tools": ["Git", "GitHub", "VSCode", "Postman"],
+    "frontend": ["Javascript", "Typescript", "ReactJS", "Vite", "Astro", "Bootstrap", "TailwindCSS", "CSS", "Html"],
+    "backend": ["Node.js", "Express.js", "PostgreSQL", "MySQL", "Swagger", "Flask"],
+    "tools": ["Git", "GitHub", "Docker", "VSCode", "Postman"],
+    "testing": ["Vitest", "Jest"],
     "data-analysis": ["Python", "Numpy", "Pandas", "Matplotlib", "Seaborn", "Scikit-Learn"]
   }
 }

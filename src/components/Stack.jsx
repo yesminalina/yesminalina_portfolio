@@ -24,24 +24,34 @@ import Pandas from './Icons/Pandas'
 import Matplotlib from './Icons/Matplotlib'
 import Seaborn from './Icons/Seaborn'
 import ScikitLearn from './Icons/ScikitLearn'
+import Typescript from './Icons/Typescript'
+import Docker from './Icons/Docker'
+import Astro from './Icons/Astro'
+import Vitest from './Icons/Vitest'
+import Jest from './Icons/Jest'
 
 const Stack = () => {
   const myStack = Object.freeze(stack)
-  const { frontend, backend, tools, 'data-analysis': dataAnalysis } = myStack.stack
+  const { frontend, backend, tools, testing, 'data-analysis': dataAnalysis } = myStack.stack
   const ICON_COMPONENTS = {
     Html,
     CSS: Css,
     Bootstrap,
     TailwindCSS,
     Javascript,
+    Typescript,
     ReactJS,
+    Astro,
     Vite,
+    Vitest,
     'Node.js': NodeJs,
     'Express.js': Express,
     Flask,
     PostgreSQL,
     MySQL,
     Swagger,
+    Jest,
+    Docker,
     Git,
     GitHub,
     VSCode,
@@ -86,6 +96,10 @@ const Stack = () => {
             <h3 className='uppercase text-olive font-semibold self-center mb-4'>Backend</h3>
             <div className='flex flex-wrap justify-center'>
               {renderStack(backend)}
+            </div>
+            <h3 className='uppercase text-olive font-semibold self-center mb-4 mt-6'>Testing</h3>
+            <div className='flex flex-wrap justify-center'>
+              {renderStack(testing)}
             </div>
           </StackBox>
           <StackBox>
