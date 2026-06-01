@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import ProjectsHome from '../components/ProjectsHome'
 import Stack from '../components/Stack'
+import Contact from '../components/Contact'
 import { Element } from 'react-scroll'
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <ProjectsHome />
       <Stack />
+      <Contact />
     </Element>
   )
 }
