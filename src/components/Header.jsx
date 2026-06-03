@@ -11,8 +11,8 @@ const Header = () => {
   return (
     <Element name='about' id='about' className='flex justify-center align-bottom md:max-w-[1100px] min-h-svh mx-auto sm:pt-20 text-olive'>
       <div className='flex flex-col sm:flex sm:flex-row sm:justify-between md:self-end sm:h-[540px] bg-none sm:bg-hero-img bg-contain bg-bottom bg-no-repeat'>
-        <section className='flex sm:w-8/12 min-h-dvh bg-hero-img bg-contain bg-bottom bg-no-repeat sm:bg-none px-6'>
-          <div className='flex flex-col w-full sm:w-8/12 pt-24 sm:pt-0'>
+        <section className='flex flex-col sm:flex-row sm:w-8/12 min-h-dvh px-6'>
+          <div className='flex flex-col w-full sm:w-8/12 pt-24 sm:pt-0 shrink-0'>
             <p className='text-xl text-pink'>Hey there, my name is</p>
             <h1 className='text-start font-semibold text-6xl sm:text-8xl max-w-36'>Yesmin Pizarro<span className='text-pink'>.</span></h1>
             <article className='sm:hidden'>
@@ -31,6 +31,7 @@ const Header = () => {
             </article>
             <Link className='hidden sm:block mt-24 ms-36 alagn-bottom text-pink animate-bounce cursor-pointer' smooth duration={500} to='projects'>{arrowDown}</Link>
           </div>
+          <div className='flex-1 bg-hero-img bg-contain bg-bottom bg-no-repeat sm:hidden' />
         </section>
         <section id='description' className='hidden sm:block self-end md:w-4/12 mt-20 md:mt-8 mb-8 ps-16'>
           <h2 className='text-3xl uppercase font-semibold'>Fullstack Developer</h2>
