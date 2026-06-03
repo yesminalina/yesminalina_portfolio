@@ -65,8 +65,9 @@ const Contact = () => {
             {/* Download CV */}
             <a
               className='border-2 rounded-md px-4 py-1 text-pink transition-transform ease-in-out duration-300 hover:scale-110 hover:cursor-pointer'
-              href='/CV_Yesmin_Pizarro_Dev.pdf'
-              download='CV_Yesmin_Pizarro_Dev.pdf'
+              href='https://docs.google.com/uc?export=download&id=1lzj9vMGLbEqkpxZBQFkYGz_qrMHwcYSv'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Download CV
             </a>

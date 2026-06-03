@@ -35,7 +35,7 @@ const Navigation = () => {
           <Link to='projects' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'projects' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>Projects</Link>
           <Link to='stack' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'stack' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>My Stack</Link>
           <Link to='contact' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer me-8 self-center ${activeSection === 'contact' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>Contact</Link>
-          <a className='border-2 rounded-md px-4 py-1 text-pink transition-transform ease-in-out duration-300 hover:scale-110 hover:cursor-pointer' href='/CV_Yesmin_Pizarro_Dev.pdf' download='CV_Yesmin_Pizarro_Dev.pdf'>Resume</a>
+          <a className='border-2 rounded-md px-4 py-1 text-pink transition-transform ease-in-out duration-300 hover:scale-110 hover:cursor-pointer' href='https://docs.google.com/uc?export=download&id=1lzj9vMGLbEqkpxZBQFkYGz_qrMHwcYSv' target='_blank' rel='noopener noreferrer'>Resume</a>
         </div>
       </div>
       {/* Mobile Menu */}
@@ -44,7 +44,7 @@ const Navigation = () => {
         <Link to='projects' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer mb-2 self-center ${activeSection === 'projects' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>Projects</Link>
         <Link to='stack' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer mb-2 self-center ${activeSection === 'stack' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>My Stack</Link>
         <Link to='contact' smooth duration={500} spy onSetActive={handleSetActive} className={`cursor-pointer mb-2 self-center ${activeSection === 'contact' ? 'underline underline-offset-4 decoration-pink decoration-2' : null}`}>Contact</Link>
-        <a onClick={toggleMenu} className='m-auto border-2 rounded-md px-4 py-1 text-pink transition-transform ease-in-out duration-300 hover:scale-110 hover:cursor-pointer' href='/CV_Yesmin_Pizarro_Dev.pdf' download='CV_Yesmin_Pizarro_Dev.pdf'>Resume</a>
+        <a onClick={toggleMenu} className='m-auto border-2 rounded-md px-4 py-1 text-pink transition-transform ease-in-out duration-300 hover:scale-110 hover:cursor-pointer' href='https://docs.google.com/uc?export=download&id=1lzj9vMGLbEqkpxZBQFkYGz_qrMHwcYSv' target='_blank' rel='noopener noreferrer'>Resume</a>
       </div>
     </nav>
   )
