@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "Portafolio personal de Yesmin Pizarro, Fullstack Developer",
+  "author": "Yesmin Pizarro",
+  "license": "MIT",
   "eslintConfig": {
     "extends": [
       "standard"
